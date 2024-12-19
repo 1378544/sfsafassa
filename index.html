@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Идеальный Стиль</title>
+    <title>Современный Splash Screen</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div id="splash-screen" class="splash-screen">
+        <div class="logo-container">
+            <img src="your_logo.png" alt="Логотип" class="logo">
+        </div>
+        <div class="loader">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <div id="main-content" class="main-content">
+        <!-- Основной контент вашего приложения -->
         <h1>Добро пожаловать!</h1>
-        <p>Это пример идеального стиля с анимациями и взаимодействием с телефоном.</p>
-        <button id="animateBtn" class="btn">Нажми меня</button>
-        <button id="nativeBtn" class="btn">Вызвать нативную функцию</button>
+        <p>Ваше основное приложение начинается здесь.</p>
     </div>
 
     <script src="script.js"></script>
