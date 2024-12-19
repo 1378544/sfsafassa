@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Templates App</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Подключение Prism.js CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
     <!-- Подключение Font Awesome для иконок -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -31,7 +29,7 @@
             <div class="container">
                 <h2>Шаблоны</h2>
                 <div class="templates-list">
-                    <!-- Карточка проекта 1 -->
+                    <!-- Пример карточки проекта -->
                     <div class="template-card">
                         <img src="images/project1.jpg" alt="Проект 1" class="project-image">
                         <div class="project-info">
@@ -44,27 +42,6 @@ def hello_world():
     print("Hello, World!")
 
 hello_world()
-                        </pre>
-                    </div>
-
-                    <!-- Карточка проекта 2 -->
-                    <div class="template-card">
-                        <img src="images/project2.jpg" alt="Проект 2" class="project-image">
-                        <div class="project-info">
-                            <h3>Название Проекта 2</h3>
-                            <p>Краткое описание проекта 2. Этот шаблон демонстрирует работу с классами в Python.</p>
-                        </div>
-                        <button class="view-code-btn" data-code-id="code2">Просмотреть код</button>
-                        <pre id="code2" class="language-python code-block">
-class MyClass:
-    def __init__(self, value):
-        self.value = value
-
-    def display(self):
-        print(f"Value is {self.value}")
-
-obj = MyClass(10)
-obj.display()
                         </pre>
                     </div>
 
@@ -98,15 +75,15 @@ obj.display()
         </button>
     </nav>
 
-    <!-- Футер (можно убрать, если не нужен) -->
+    <!-- Футер -->
     <footer>
         <p>&copy; 2024 Python Templates App</p>
     </footer>
 
-    <!-- Подключение Prism.js и его компонентов -->
+    <!-- Подключение Prism.js для подсветки синтаксиса -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
-    <!-- Ваши собственные скрипты -->
+    <!-- Подключение собственного скрипта -->
     <script src="scripts.js"></script>
 </body>
 </html>
