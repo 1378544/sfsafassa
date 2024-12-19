@@ -3,87 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Templates App</title>
+    <title>Идеальный Стиль</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Подключение Font Awesome для иконок -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Верхняя панель -->
-    <header>
-        <h1>Python Templates</h1>
-    </header>
+    <div class="container">
+        <h1>Добро пожаловать!</h1>
+        <p>Это пример идеального стиля с анимациями и взаимодействием с телефоном.</p>
+        <button id="animateBtn" class="btn">Нажми меня</button>
+        <button id="nativeBtn" class="btn">Вызвать нативную функцию</button>
+    </div>
 
-    <!-- Основной контент -->
-    <main>
-        <!-- Главная страница -->
-        <section id="home" class="page active">
-            <div class="container">
-                <h2>Добро пожаловать!</h2>
-                <p>Это приложение содержит различные Python шаблоны для вашего удобства.</p>
-            </div>
-        </section>
-
-        <!-- Шаблоны (проекты) -->
-        <section id="templates" class="page">
-            <div class="container">
-                <h2>Шаблоны</h2>
-                <div class="templates-list">
-                    <!-- Пример карточки проекта -->
-                    <div class="template-card">
-                        <img src="images/project1.jpg" alt="Проект 1" class="project-image">
-                        <div class="project-info">
-                            <h3>Название Проекта 1</h3>
-                            <p>Краткое описание проекта 1. Этот шаблон демонстрирует базовые концепции Python.</p>
-                        </div>
-                        <button class="view-code-btn" data-code-id="code1">Просмотреть код</button>
-                        <pre id="code1" class="language-python code-block">
-def hello_world():
-    print("Hello, World!")
-
-hello_world()
-                        </pre>
-                    </div>
-
-                    <!-- Добавьте больше карточек проектов по необходимости -->
-                </div>
-            </div>
-        </section>
-
-        <!-- О приложении -->
-        <section id="about" class="page">
-            <div class="container">
-                <h2>О приложении</h2>
-                <p>Это мобильное приложение создано для демонстрации различных Python шаблонов с удобным интерфейсом и подсветкой синтаксиса.</p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Нижняя навигационная панель -->
-    <nav class="bottom-nav">
-        <button class="nav-btn active" data-target="home">
-            <i class="fas fa-home"></i>
-            <span>Главная</span>
-        </button>
-        <button class="nav-btn" data-target="templates">
-            <i class="fas fa-th-large"></i>
-            <span>Шаблоны</span>
-        </button>
-        <button class="nav-btn" data-target="about">
-            <i class="fas fa-info-circle"></i>
-            <span>О приложении</span>
-        </button>
-    </nav>
-
-    <!-- Футер -->
-    <footer>
-        <p>&copy; 2024 Python Templates App</p>
-    </footer>
-
-    <!-- Подключение Prism.js для подсветки синтаксиса -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
-    <!-- Подключение собственного скрипта -->
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
