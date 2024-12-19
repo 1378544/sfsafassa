@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Templates App</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключение Prism.js CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Верхняя панель (можно скрыть, если не нужна) -->
+    <header>
+        <h1>Python Templates</h1>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Главная страница -->
+        <section id="home" class="page active">
+            <div class="container">
+                <h2>Добро пожаловать!</h2>
+                <p>Это приложение содержит различные Python шаблоны для вашего удобства.</p>
+            </div>
+        </section>
+
+        <!-- Шаблоны -->
+        <section id="templates" class="page">
+            <div class="container">
+                <h2>Шаблоны</h2>
+                <div class="templates-list">
+                    <div class="template-card">
+                        <h3>Пример шаблона 1</h3>
+                        <pre><code class="language-python">
+def hello_world():
+    print("Hello, World!")
+
+hello_world()
+                        </code></pre>
+                    </div>
+                    <div class="template-card">
+                        <h3>Пример шаблона 2</h3>
+                        <pre><code class="language-python">
+class MyClass:
+    def __init__(self, value):
+        self.value = value
+
+    def display(self):
+        print(f"Value is {self.value}")
+
+obj = MyClass(10)
+obj.display()
+                        </code></pre>
+                    </div>
+                    <!-- Добавьте больше карточек шаблонов по необходимости -->
+                </div>
+            </div>
+        </section>
+
+        <!-- О приложении -->
+        <section id="about" class="page">
+            <div class="container">
+                <h2>О приложении</h2>
+                <p>Это мобильное приложение создано для демонстрации различных Python шаблонов с удобным интерфейсом и подсветкой синтаксиса.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Нижняя навигационная панель -->
+    <nav class="bottom-nav">
+        <button class="nav-btn active" data-target="home">
+            <i class="fas fa-home"></i>
+            <span>Главная</span>
+        </button>
+        <button class="nav-btn" data-target="templates">
+            <i class="fas fa-th-large"></i>
+            <span>Шаблоны</span>
+        </button>
+        <button class="nav-btn" data-target="about">
+            <i class="fas fa-info-circle"></i>
+            <span>О приложении</span>
+        </button>
+    </nav>
+
+    <!-- Футер (можно убрать, если не нужен) -->
+    <footer>
+        <p>&copy; 2024 Python Templates App</p>
+    </footer>
+
+    <!-- Подключение Prism.js и его компонентов -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <!-- Ваши собственные скрипты -->
+    <script src="scripts.js"></script>
+</body>
+</html>
