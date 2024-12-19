@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Верхняя панель (можно скрыть, если не нужна) -->
+    <!-- Верхняя панель -->
     <header>
         <h1>Python Templates</h1>
     </header>
@@ -26,23 +26,36 @@
             </div>
         </section>
 
-        <!-- Шаблоны -->
+        <!-- Шаблоны (проекты) -->
         <section id="templates" class="page">
             <div class="container">
                 <h2>Шаблоны</h2>
                 <div class="templates-list">
+                    <!-- Карточка проекта 1 -->
                     <div class="template-card">
-                        <h3>Пример шаблона 1</h3>
-                        <pre><code class="language-python">
+                        <img src="images/project1.jpg" alt="Проект 1" class="project-image">
+                        <div class="project-info">
+                            <h3>Название Проекта 1</h3>
+                            <p>Краткое описание проекта 1. Этот шаблон демонстрирует базовые концепции Python.</p>
+                        </div>
+                        <button class="view-code-btn" data-code-id="code1">Просмотреть код</button>
+                        <pre id="code1" class="language-python code-block">
 def hello_world():
     print("Hello, World!")
 
 hello_world()
-                        </code></pre>
+                        </pre>
                     </div>
+
+                    <!-- Карточка проекта 2 -->
                     <div class="template-card">
-                        <h3>Пример шаблона 2</h3>
-                        <pre><code class="language-python">
+                        <img src="images/project2.jpg" alt="Проект 2" class="project-image">
+                        <div class="project-info">
+                            <h3>Название Проекта 2</h3>
+                            <p>Краткое описание проекта 2. Этот шаблон демонстрирует работу с классами в Python.</p>
+                        </div>
+                        <button class="view-code-btn" data-code-id="code2">Просмотреть код</button>
+                        <pre id="code2" class="language-python code-block">
 class MyClass:
     def __init__(self, value):
         self.value = value
@@ -52,9 +65,10 @@ class MyClass:
 
 obj = MyClass(10)
 obj.display()
-                        </code></pre>
+                        </pre>
                     </div>
-                    <!-- Добавьте больше карточек шаблонов по необходимости -->
+
+                    <!-- Добавьте больше карточек проектов по необходимости -->
                 </div>
             </div>
         </section>
